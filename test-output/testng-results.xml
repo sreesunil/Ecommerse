@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-13T11:38:25 PDT" name="Default suite" finished-at="2023-10-13T11:38:51 PDT" duration-ms="26320">
+    <groups>
+    </groups>
+    <test started-at="2023-10-13T11:38:25 PDT" name="Default test" finished-at="2023-10-13T11:38:51 PDT" duration-ms="26320">
+      <class name="ecommercetest.EcommerceTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:25 PDT" name="setDriver" finished-at="2023-10-13T11:38:25 PDT" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="Launch()[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:25 PDT" name="Launch" finished-at="2023-10-13T11:38:34 PDT" duration-ms="8466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:34 PDT" name="setup" finished-at="2023-10-13T11:38:34 PDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ecommercetest.EcommerceTest.TC02()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC02()[pri:1, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:34 PDT" name="TC02" finished-at="2023-10-13T11:38:40 PDT" duration-ms="6248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method signature="TC04()[pri:2, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:40 PDT" name="TC04" finished-at="2023-10-13T11:38:49 PDT" duration-ms="8630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04 -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:40 PDT" name="setup" finished-at="2023-10-13T11:38:40 PDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ecommercetest.EcommerceTest.TC04()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC03()[pri:4, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:49 PDT" name="TC03" finished-at="2023-10-13T11:38:51 PDT" duration-ms="2637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:49 PDT" name="setup" finished-at="2023-10-13T11:38:49 PDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ecommercetest.EcommerceTest.TC03()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:ecommercetest.EcommerceTest@37fbe4a8]" started-at="2023-10-13T11:38:51 PDT" name="removeDriver" finished-at="2023-10-13T11:38:51 PDT" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+      </class> <!-- ecommercetest.EcommerceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
