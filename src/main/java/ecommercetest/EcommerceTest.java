@@ -39,7 +39,7 @@ public class EcommerceTest extends BaseTest {
 
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void TC02() {
 		
 		AppiumDriver driver = BaseTest.getDriver();
@@ -63,11 +63,23 @@ public class EcommerceTest extends BaseTest {
 		BaseTest.logger.info("Screen rotate");
 		
 	}
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void TC04() {
 		
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
 		ecommercepage.runAppInBackBround(driver);
+	}
+	
+	
+	@Test
+	public void TC05() {
+		
+	AppiumDriver driver = BaseTest.getDriver();
+		
+		Ecommercepage ecommercepage = new Ecommercepage(driver);
+		ecommercepage.swipeToCategory(driver);
+		
+		BaseTest.logger.info("Clicked on Category");
 	}
 
 }

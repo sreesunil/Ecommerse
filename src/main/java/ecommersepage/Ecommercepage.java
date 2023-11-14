@@ -3,16 +3,19 @@ package ecommersepage;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.ScreenOrientation;
-
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import constants.WaitConstants;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class Ecommercepage {
 
@@ -61,5 +64,22 @@ public class Ecommercepage {
 		
 		driver.runAppInBackground(Duration.ofSeconds(8));
 	}
+	
+	public void swipeToCategory(AppiumDriver driver) {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		WebElement category = driver.findElement(By.id("com.solodroid.solomerce:id/nav_category"));
+		Point categorysize = category.getLocation();
+
+		System.out.println(categorysize.x);
+		System.out.println(categorysize.y);
+
+		TouchAction action = new TouchAction<>(driver);
+		action.tap(PointOption.point(categorysize.x, categorysize.y)).perform();
+
+	}
+
+	
 
 }

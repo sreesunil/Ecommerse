@@ -40,7 +40,7 @@ public class ECommerce {
 
 	}
 
-	 @Test(priority = 2)
+	 //@Test(priority = 2)
 	public void TC01() {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -92,7 +92,7 @@ public class ECommerce {
 
 	}
 
-	// @Test
+	//@Test
 	public void TC05() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -119,6 +119,13 @@ public class ECommerce {
 						+ ".scrollForward().scrollIntoView(new UiSelector()"
 						+ ".textContains(\"Money Counter Kozure MC-101\"))").click();
 
+	}
+	
+	@Test
+	public void TC07() {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.className("android.widget.ImageView")).click();
 	}
 	
 	
