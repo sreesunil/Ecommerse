@@ -21,11 +21,9 @@ public class EcommerceTest extends BaseTest {
 	public void Launch() throws IOException {
 		LaunchApp();
 
-
-
 	}
 
-	//@Test(priority = 3)
+	// @Test(priority = 3)
 	public void TC01() throws IOException {
 
 		AppiumDriver driver = BaseTest.getDriver();
@@ -39,47 +37,57 @@ public class EcommerceTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 1)
+	// @Test(priority = 1)
 	public void TC02() {
-		
+
 		AppiumDriver driver = BaseTest.getDriver();
-		
 
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
-		
+
 		ecommercepage.searchText(driver);
 
 		BaseTest.logger.info("Product Selected");
 	}
-	
+
 	@Test(priority = 4)
 	public void TC03() {
-		
+
 		AppiumDriver driver = BaseTest.getDriver();
-		
+
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
 		ecommercepage.screenRotate(driver);
-		
+
 		BaseTest.logger.info("Screen rotate");
-		
+
 	}
-	//@Test(priority = 2)
+
+	// @Test(priority = 2)
 	public void TC04() {
-		
+
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
 		ecommercepage.runAppInBackBround(driver);
 	}
-	
-	
+
 	@Test
 	public void TC05() {
-		
-	AppiumDriver driver = BaseTest.getDriver();
-		
+
+		AppiumDriver driver = BaseTest.getDriver();
+
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
 		ecommercepage.swipeToCategory(driver);
-		
+
 		BaseTest.logger.info("Clicked on Category");
+	}
+	
+	
+    @Test
+	public void TC06() throws InterruptedException {
+
+		AppiumDriver driver = BaseTest.getDriver();
+
+		Ecommercepage ecommercepage = new Ecommercepage(driver);
+		ecommercepage.swipeAction(driver);
+
 	}
 
 }

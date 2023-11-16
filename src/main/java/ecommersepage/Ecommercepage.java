@@ -77,7 +77,22 @@ public class Ecommercepage {
 
 		TouchAction action = new TouchAction<>(driver);
 		action.tap(PointOption.point(categorysize.x, categorysize.y)).perform();
+		
+		
 
+	}
+	
+	public void swipeAction(AppiumDriver driver) throws InterruptedException {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		WebElement search = driver.findElement(By.id("com.solodroid.solomerce:id/search"));
+		TouchAction swipeAction = new TouchAction<>(driver);
+		swipeAction.press(PointOption.point(655, 1200)).waitAction().moveTo(PointOption.point(30, 1200)).release()
+				.perform();
+		Thread.sleep(3000);
+		swipeAction.press(PointOption.point(30, 1200)).waitAction().moveTo(PointOption.point(655, 1200)).release()
+				.perform();
 	}
 
 	

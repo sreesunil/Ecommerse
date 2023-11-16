@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-14T11:49:11 PST" name="Default suite" finished-at="2023-11-14T11:49:28 PST" duration-ms="17340">
+  <suite started-at="2023-11-14T19:38:03 PST" name="Default suite" finished-at="2023-11-14T19:38:25 PST" duration-ms="22297">
     <groups>
     </groups>
-    <test started-at="2023-11-14T11:49:11 PST" name="Default test" finished-at="2023-11-14T11:49:28 PST" duration-ms="17340">
+    <test started-at="2023-11-14T19:38:03 PST" name="Default test" finished-at="2023-11-14T19:38:25 PST" duration-ms="22297">
       <class name="ecommercetest.EcommerceTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:11 PST" name="setDriver" finished-at="2023-11-14T11:49:11 PST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:03 PST" name="setDriver" finished-at="2023-11-14T19:38:03 PST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="Launch()[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:11 PST" name="Launch" finished-at="2023-11-14T11:49:20 PST" duration-ms="8693" status="PASS">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:03 PST" name="Launch" finished-at="2023-11-14T19:38:12 PST" duration-ms="9065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:20 PST" name="setup" finished-at="2023-11-14T11:49:20 PST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:12 PST" name="setup" finished-at="2023-11-14T19:38:12 PST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC05()[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:20 PST" name="TC05" finished-at="2023-11-14T11:49:26 PST" duration-ms="6323" status="PASS">
+        <test-method signature="TC05()[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:12 PST" name="TC05" finished-at="2023-11-14T19:38:16 PST" duration-ms="4273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05 -->
-        <test-method signature="TC03()[pri:4, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:26 PST" name="TC03" finished-at="2023-11-14T11:49:28 PST" duration-ms="1723" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:16 PST" name="setup" finished-at="2023-11-14T19:38:16 PST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ecommercetest.EcommerceTest.TC06() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC03 -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:26 PST" name="setup" finished-at="2023-11-14T11:49:26 PST" duration-ms="0" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="TC06()[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:16 PST" name="TC06" finished-at="2023-11-14T19:38:22 PST" duration-ms="5750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06 -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:22 PST" name="setup" finished-at="2023-11-14T19:38:22 PST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:ecommercetest.EcommerceTest@352c308]" started-at="2023-11-14T11:49:28 PST" name="removeDriver" finished-at="2023-11-14T11:49:28 PST" duration-ms="361" status="PASS">
+        <test-method signature="TC03()[pri:4, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:22 PST" name="TC03" finished-at="2023-11-14T19:38:25 PST" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:ecommercetest.EcommerceTest@6d6bc158]" started-at="2023-11-14T19:38:25 PST" name="removeDriver" finished-at="2023-11-14T19:38:25 PST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
