@@ -2,8 +2,12 @@ package demo;
 
 import org.testng.annotations.Test;
 
+import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.offset.PointOption;
 
 import java.net.MalformedURLException;
@@ -40,17 +44,19 @@ public class ECommerce {
 
 	}
 
-	 //@Test(priority = 2)
+	// @Test(priority = 4)
 	public void TC01() {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.findElement(By.id("com.solodroid.solomerce:id/nav_profile")).click();
 		driver.runAppInBackground(Duration.ofSeconds(8));
+		
+		
 
 	}
 
-	// @Test(priority = 1)
+	//@Test(priority = 1)
 	public void TC02() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -62,6 +68,14 @@ public class ECommerce {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.rotate(ScreenOrientation.PORTRAIT);
 
+		
+		
+		  Activity calculator = new Activity(" com.sec.android.app.popupcalculator",
+		  "com.sec.android.app.popupcalculator.Calculator");
+		   driver.startActivity(calculator); 
+		   driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		 
+		 
 	}
 
 	//@Test
@@ -92,7 +106,7 @@ public class ECommerce {
 
 	}
 
-	//@Test
+	//@Test(priority = 2)
 	public void TC05() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -104,7 +118,8 @@ public class ECommerce {
 		Thread.sleep(3000);
 		swipeAction.press(PointOption.point(30, 1200)).waitAction().moveTo(PointOption.point(655, 1200)).release()
 				.perform();
-
+		
+		
 	}
 
 	//@Test
@@ -121,11 +136,45 @@ public class ECommerce {
 
 	}
 	
-	@Test
+	//@Test
 	public void TC07() {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.className("android.widget.ImageView")).click();
+		driver.findElement(By.id("com.solodroid.solomerce:id/search")).click();
+		driver.findElement(By.id("com.solodroid.solomerce:id/search_src_text")).sendKeys("Portable Bottle Heater");
+		driver.hideKeyboard();
+		driver.findElement(By.id("com.solodroid.solomerce:id/category_image")).click();
+		driver.findElement(By.id("com.solodroid.solomerce:id/btn_add_cart")).click();
+		driver.findElement(By.id("com.solodroid.solomerce:id/userInputDialog")).sendKeys("2");
+		driver.findElement(By.id("android:id/button1")).click();
+		
+		
+	}
+	
+	@Test
+	public void TC08() {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		driver.findElement(By.id("com.solodroid.solomerce:id/search")).click();
+		driver.findElement(By.id("com.solodroid.solomerce:id/search_src_text")).sendKeys("Portable Bottle Heater");
+		driver.hideKeyboard();
+		driver.findElement(By.id("com.solodroid.solomerce:id/category_image")).click();
+		WebElement product = driver.findElement(By.id("com.solodroid.solomerce:id/product_image"));
+		product.click();
+		
+		
+		
+		 MultiTouchAction action = new MultiTouchAction(driver); TouchAction touch1 =
+				  new TouchAction<>(driver); TouchAction touch2 = new TouchAction<>(driver);
+				  
+				  touch1.press(PointOption.point(645,915)).waitAction().moveTo(PointOption.
+				  point(645,915)).perform();
+				  touch2.press(PointOption.point(710,1400)).waitAction().moveTo(PointOption.
+				  point(710,1400)).perform();
+				  
+				  action.add(touch1).add(touch2).perform();
+		 
 	}
 	
 	

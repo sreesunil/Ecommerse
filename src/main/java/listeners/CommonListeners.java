@@ -23,13 +23,13 @@ public class CommonListeners  extends BaseTest implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		BaseTest.test.fail(result.getName() + " Test Failed");
-		/*
-		 * try {
-		 * BaseTest.test.addScreenCaptureFromPath(CommonUtils.getScreenshots(BaseTest.
-		 * getDriver())); } catch (IOException e) {
-		 * 
-		 * e.printStackTrace(); }
-		 */
+		
+		  try {
+		  BaseTest.test.addScreenCaptureFromPath(CommonUtils.getScreenshots(BaseTest.
+		  getDriver())); } catch (IOException e) {
+		  
+		  e.printStackTrace(); }
+		 
 		
 	}
 

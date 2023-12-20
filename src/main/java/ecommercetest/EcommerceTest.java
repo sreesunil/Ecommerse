@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import constants.WaitConstants;
 import ecommersepage.Ecommercepage;
 import io.appium.java_client.AppiumDriver;
-
+import io.appium.java_client.android.AndroidDriver;
 import listeners.CommonListeners;
 
 @Listeners(CommonListeners.class)
@@ -23,7 +23,7 @@ public class EcommerceTest extends BaseTest {
 
 	}
 
-	// @Test(priority = 3)
+	 @Test(priority = 3)
 	public void TC01() throws IOException {
 
 		AppiumDriver driver = BaseTest.getDriver();
@@ -37,7 +37,7 @@ public class EcommerceTest extends BaseTest {
 
 	}
 
-	// @Test(priority = 1)
+	 @Test(priority = 1)
 	public void TC02() {
 
 		AppiumDriver driver = BaseTest.getDriver();
@@ -61,7 +61,7 @@ public class EcommerceTest extends BaseTest {
 
 	}
 
-	// @Test(priority = 2)
+	 @Test(priority = 2)
 	public void TC04() {
 
 		Ecommercepage ecommercepage = new Ecommercepage(driver);
@@ -89,5 +89,10 @@ public class EcommerceTest extends BaseTest {
 		ecommercepage.swipeAction(driver);
 
 	}
+    
+    
+   
+    	
+    
 
 }

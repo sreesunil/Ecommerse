@@ -5,7 +5,7 @@
     <classes>
       <class name="demo.ECommerce">
         <methods>
-          <include name="TC07"/>
+          <include name="TC08"/>
           <include name="LaunchApp"/>
         </methods>
       </class> <!-- demo.ECommerce -->

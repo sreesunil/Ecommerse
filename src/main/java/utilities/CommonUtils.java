@@ -22,12 +22,12 @@ public class CommonUtils {
 		return value;
 	}
 	
-	/*
-	 * public static String getScreenshots(AppiumDriver driver) throws IOException {
-	 * String path = FileConstant.SCREENSHOT_PATH; TakesScreenshot screen =
-	 * (TakesScreenshot)driver; File src = screen.getScreenshotAs(OutputType.FILE);
-	 * File destination = new File(path); FileUtils.copyFile(src, destination);
-	 * return path; }
-	 */
+	
+	  public static String getScreenshots(AppiumDriver driver) throws IOException {
+	  String path = FileConstant.SCREENSHOT_PATH; TakesScreenshot screen =
+	  (TakesScreenshot)driver; File src = screen.getScreenshotAs(OutputType.FILE);
+	  File destination = new File(path); FileUtils.copyFile(src, destination);
+	  return path; }
+	 
 	
 }
